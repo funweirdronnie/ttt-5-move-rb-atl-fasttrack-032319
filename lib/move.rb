@@ -7,3 +7,12 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+def input_to_index(choice)
+  choice.to_i - 1
+end 
+
+def move(board, index, piece="X")
+## place "X" in the first spot in the Array
+puts "The player wants to move to #{index}"
+board[index] = piece
+end
